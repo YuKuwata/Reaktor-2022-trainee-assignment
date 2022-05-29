@@ -20,7 +20,6 @@
     "art-template": "^4.13.2",
     "express": "^4.18.1",
     "express-art-template": "^1.0.1",
-    "fs": "0.0.1-security",
-    "react": "^18.1.0"
+    "fs": "0.0.1-security"
   }
 }
