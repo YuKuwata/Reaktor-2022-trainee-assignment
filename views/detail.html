@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/detail.css">
+    <title>Package Detail</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th class="name">Name</th>
+            <th class="description">Description</th>
+            <th class="dependencies">Dependencies</th>
+            <th class="revDependencies">Reverse Dependencies</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">{{data.name}}</td>
+                <td class="description content">{{data.description}}</td>
+                <td class="dependencies">
+                    <ul>
+                        {{each data.dependencies}}
+                        {{if $value.installed}}
+                        <li><a href="/detail/{{$value.name}}">{{$value.name}}</a></li>
+                        {{else}}
+                        <li>{{$value.name}}</li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </td>
+                <td class="revDependencies">
+                    <ul>
+                        {{each data.revDependencies}}
+                        <li><a href="/detail/{{$value}}">{{$value}}</a></li>
+                        {{/each}}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

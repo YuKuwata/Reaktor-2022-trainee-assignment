@@ -1,0 +1,26 @@
+{
+  "name": "reaktor-2022-trainee-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuKuwata/Reaktor-2022-trainee-assignment.git"
+  },
+  "author": "Yu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuKuwata/Reaktor-2022-trainee-assignment/issues"
+  },
+  "homepage": "https://github.com/YuKuwata/Reaktor-2022-trainee-assignment#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "express": "^4.18.1",
+    "express-art-template": "^1.0.1",
+    "fs": "0.0.1-security",
+    "react": "^18.1.0"
+  }
+}

@@ -1,0 +1,25 @@
+table {
+    width: 80%;
+    margin: 10vh auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.name,
+.description,
+.dependencies,
+.revDependencies {
+    text-align: center;
+}
+
+.description.content {
+    text-align: left;
+}
+
+li {
+    list-style-type: none;
+}
